@@ -32,6 +32,8 @@ svysmoothunit(
 
 \item{Amat}{Adjacency matrix for the regions. If set to NULL, the IID spatial effect will be used.}
 
+\item{X.pop}{unit-level covariates data frame. One of the column name needs to match the domain specified, in order to be linked to the data input. Currently only supporting time-invariant domain-level covariates.}
+
 \item{domain.size}{Domain size data frame. One of the column name needs to match the domain specified, in order to be linked to the data input and there must be a size column containing domain sizes.}
 
 \item{pc.u}{hyperparameter U for the PC prior on precisions.}
@@ -47,8 +49,6 @@ svysmoothunit(
 \item{n.sample}{number of draws from posterior used to compute summaries}
 
 \item{...}{additional parameters}
-
-\item{X.area}{unit-level covariates data frame. One of the column name needs to match the domain specified, in order to be linked to the data input. Currently only supporting time-invariant domain-level covariates.}
 }
 \value{
 A list with elements

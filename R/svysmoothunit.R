@@ -8,7 +8,7 @@
 #' @param design an object of class "svydesign" containing the data for the model
 #' @param family of the response variable, currently supports 'binomial' (default with logit link function) or 'gaussian'.
 #' @param Amat Adjacency matrix for the regions. If set to NULL, the IID spatial effect will be used.
-#' @param X.area unit-level covariates data frame. One of the column name needs to match the domain specified, in order to be linked to the data input. Currently only supporting time-invariant domain-level covariates.
+#' @param X.pop unit-level covariates data frame. One of the column name needs to match the domain specified, in order to be linked to the data input. Currently only supporting time-invariant domain-level covariates.
 #' @param domain.size Domain size data frame. One of the column name needs to match the domain specified, in order to be linked to the data input and there must be a size column containing domain sizes.
 #' @param pc.u 	hyperparameter U for the PC prior on precisions.
 #' @param pc.alpha hyperparameter alpha for the PC prior on precisions.
